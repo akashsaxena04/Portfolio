@@ -62,7 +62,7 @@ npm run dev
 You can view the deployed portfolio here:
 
 ```
-https://your-portfolio-link.vercel.app
+https://akashsaxena.vercel.app
 ```
 
 ---
