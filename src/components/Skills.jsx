@@ -8,13 +8,13 @@ const SkillGroup = ({ group, idx }) => {
     const rect = card.getBoundingClientRect();
     const x = e.clientX - rect.left;
     const y = e.clientY - rect.top;
-    
+
     const centerX = rect.width / 2;
     const centerY = rect.height / 2;
-    
+
     const rotateX = ((y - centerY) / centerY) * -5;
     const rotateY = ((x - centerX) / centerX) * 5;
-    
+
     card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
   };
 
@@ -29,8 +29,8 @@ const SkillGroup = ({ group, idx }) => {
   };
 
   return (
-    <div 
-      ref={revealRef} 
+    <div
+      ref={revealRef}
       className={`skill-group glass-card reveal reveal-delay-${(idx % 3) + 1}`}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
@@ -52,7 +52,7 @@ const Skills = () => {
     { title: 'Languages', items: ['C', 'C++', 'Python', 'JavaScript'] },
     { title: 'Frameworks & Libraries', items: ['React.js', 'Node.js', 'Express.js', 'Tailwind CSS'] },
     { title: 'Databases & ORM', items: ['MySQL', 'MongoDB'] },
-    { title: 'Tools & Platforms', items: ['Git & GitHub', 'Docker', 'Postman'] },
+    { title: 'Tools & Platforms', items: ['Git & GitHub', 'Vercel', 'Postman'] },
     { title: 'Soft Skills', items: ['Effective Presentation', 'Leadership', 'Team Collaboration', 'Decision Making'] }
   ];
 
