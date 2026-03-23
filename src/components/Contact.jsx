@@ -40,7 +40,7 @@ const Contact = () => {
               <div className="contact-item mt-1">
                 <span className="contact-label">LinkedIn</span>
                 <a href="https://linkedin.com/in/akash-saxena04" target="_blank" rel="noopener noreferrer" className="contact-link glow-text">
-                  linkedin.com/in/akash04
+                  linkedin.com/in/akash-saxena04
                 </a>
               </div>
               <div className="contact-item mt-1">
